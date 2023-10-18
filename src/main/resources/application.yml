@@ -1,0 +1,13 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: audit-service
+
+info:
+  application:
+    name: ${spring.application.name}
+    description: '@project.description@'
+    version: '@project.version@'
+    spring-cloud-version: '@spring-cloud.version@'
+    spring-boot-version: '@project.parent.version@'
