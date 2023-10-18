@@ -15,6 +15,7 @@ public class AuditController {
     @Autowired
     IAuditService auditService;
 
+
     @PostMapping("/logActivity")
     public void analyzeTransaction(@RequestBody TransactionEvent transactionEvent) {
         auditService.logActivity(transactionEvent);
