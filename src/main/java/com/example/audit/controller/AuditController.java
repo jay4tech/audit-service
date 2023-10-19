@@ -1,6 +1,6 @@
 package com.example.audit.controller;
 
-import com.example.audit.model.TransactionEvent;
+import com.example.audit.model.AuditEvent;
 import com.example.audit.service.IAuditService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,7 +17,7 @@ public class AuditController {
 
 
     @PostMapping("/logActivity")
-    public void analyzeTransaction(@RequestBody TransactionEvent transactionEvent) {
-        auditService.logActivity(transactionEvent);
+    public void analyzeTransaction(@RequestBody AuditEvent auditEvent) {
+        auditService.logActivity(auditEvent);
     }
 }

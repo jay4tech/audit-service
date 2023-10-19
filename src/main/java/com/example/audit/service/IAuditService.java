@@ -1,8 +1,8 @@
 package com.example.audit.service;
 
-import com.example.audit.model.TransactionEvent;
 
+import com.example.audit.model.AuditEvent;
 
 public interface IAuditService {
-    void logActivity(TransactionEvent transactionEvent);
+    void logActivity(AuditEvent auditEvent);
 }
